@@ -9,11 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var currentValue: Int = 0
+    var currentValue: Int = 50
+    
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        slider.value = Float(currentValue)
     }
     @IBAction func showAlert() {
         let alert = UIAlertController(title: "Current value of sldier", message: "\(currentValue)", preferredStyle: .alert)
