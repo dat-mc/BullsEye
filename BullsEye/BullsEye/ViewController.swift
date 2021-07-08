@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         startNewRound()
     }
     @IBAction func showAlert() {
-        let message = "The value of the slider is \(currentValue)\nThe target value is \(targetValue)"
+        let difference: Int = abs(currentValue - targetValue)
+        let message = "The value of the slider is \(currentValue)\nThe target value is \(targetValue)\nThe difference is \(difference)"
         let alert = UIAlertController(title: "Hit me!", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
@@ -34,8 +35,12 @@ class ViewController: UIViewController {
     
     func startNewRound() {
         targetValue = Int.random(in: 1...100)
-        targetLabel.text = "\(targetValue)"
         currentValue = 50
         slider.value = Float(currentValue)
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        targetLabel.text = String(targetValue)
     }
 }
