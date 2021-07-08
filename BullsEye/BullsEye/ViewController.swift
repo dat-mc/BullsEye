@@ -10,18 +10,19 @@ import UIKit
 class ViewController: UIViewController {
 
     var currentValue: Int = 50
+    var targetValue: Int = 0
     
     @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         slider.value = Float(currentValue)
+        targetValue = Int.random(in: 1...100)
     }
     @IBAction func showAlert() {
-        let alert = UIAlertController(title: "Current value of sldier", message: "\(currentValue)", preferredStyle: .alert)
-        
+        let message = "The value of the slider is \(currentValue)\nThe target value is \(targetValue)"
+        let alert = UIAlertController(title: "Hit me!", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
