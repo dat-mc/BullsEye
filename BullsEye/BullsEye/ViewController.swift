@@ -12,10 +12,12 @@ class ViewController: UIViewController {
     var currentValue: Int = 50
     var targetValue: Int = 0
     var totalScore: Int = 0
+    var round: Int = 0
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var scoreLablel: UILabel!
+    @IBOutlet weak var roundLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     func startNewRound() {
+        round += 1
         targetValue = Int.random(in: 1...100)
         currentValue = 50
         slider.value = Float(currentValue)
@@ -47,5 +50,6 @@ class ViewController: UIViewController {
     func updateLabels() {
         targetLabel.text = String(targetValue)
         scoreLablel.text = String(totalScore)
+        roundLabel.text = String(round)
     }
 }
