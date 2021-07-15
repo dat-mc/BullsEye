@@ -23,26 +23,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         startNewRound()
     }
+    
     @IBAction func showAlert() {
         let difference: Int = abs(currentValue - targetValue)
-        let points: Int = 100 - difference
+        var points: Int = 100 - difference
         let title: String
-        let message = "You scored \(points) points!"
         if difference == 0 {
             title = "Perfect!"
+            points += 100
         } else if difference < 5 {
             title = "Almost!"
+            points += 50
         } else if difference < 15 {
             title = "Not bad"
         } else {
             title = "Not even close..."
         }
+        let message = "You scored \(points) points!"
         totalScore += points
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: {
+            action in self.startNewRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
