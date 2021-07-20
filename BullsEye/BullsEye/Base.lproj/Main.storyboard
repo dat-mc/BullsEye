@@ -20,17 +20,8 @@
                                 <rect key="frame" x="-1" y="-1" width="668" height="377"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-Jp-gcp">
-                                <rect key="frame" x="20" y="322" width="56" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="1J5-O2-FMj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8C4-nU-H6t">
-                                <rect key="frame" x="109" y="329" width="55" height="20"/>
+                                <rect key="frame" x="111" y="329" width="55" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +30,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZL-w9-eb5">
-                                <rect key="frame" x="164" y="329" width="61" height="20"/>
+                                <rect key="frame" x="166" y="329" width="61" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +39,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xE-uF-kVd">
-                                <rect key="frame" x="503" y="328" width="59" height="20"/>
+                                <rect key="frame" x="462" y="329" width="59" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +48,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMG-vY-LPN">
-                                <rect key="frame" x="564" y="328" width="31" height="20"/>
+                                <rect key="frame" x="523" y="329" width="31" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,11 +56,16 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.50386694093413698" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS7-U7-YSy">
-                                <rect key="frame" x="306" y="198" width="55" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS7-U7-YSy">
+                                <rect key="frame" x="283" y="196" width="100" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Hit Me!"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058823529411" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.5036936374689569" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                 <connections>
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="HFS-Ll-hNV"/>
                                 </connections>
@@ -95,9 +91,10 @@
                                     <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="wbs-2g-Y2P"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zig-qs-qf9">
-                                <rect key="frame" x="623" y="328" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zig-qs-qf9">
+                                <rect key="frame" x="604" y="323" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="InfoButton" backgroundImage="SmallButton"/>
                                 <connections>
                                     <segue destination="v9N-iU-IGC" kind="presentation" id="bph-xk-ILp"/>
                                 </connections>
@@ -120,6 +117,14 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.50386694093413698" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-Jp-gcp">
+                                <rect key="frame" x="34" y="323" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="1J5-O2-FMj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -236,6 +241,11 @@ Enjoy!</string>
     </scenes>
     <resources>
         <image name="Background" width="568" height="320"/>
+        <image name="Button-Highlighted" width="100" height="37"/>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
         <image name="me" width="640" height="640"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
